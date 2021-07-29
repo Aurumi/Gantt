@@ -71,7 +71,6 @@ export default class ReactGantt extends Component {
                     this.ganttRef = node;
                 }}
             />
-            // <svg id="gantt"></svg>
         );
     }
 }

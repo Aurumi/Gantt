@@ -50,17 +50,6 @@ const Gantt = () => {
         setTasks(tasks);
     };
 
-    const customPopupHtml = (task) => {
-        const end_date = task._end.format('MMM D');
-        return `
-          <div class="details-container">
-            <h5>${task.name}</h5>
-            <p>Expected to finish by ${end_date}</p>
-            <p>${task.progress}% completed!</p>
-          </div>
-        `;
-    };
-
     useEffect(() => {
         setInterval(() => {
             setViewMode(
